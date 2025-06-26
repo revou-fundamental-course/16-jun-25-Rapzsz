@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="header">
+                <h1>Kalkulator Segitiga</h1>
+                <p>Web penghitung luas dan keliling segitiga dengan sangat mudah.</p>
+            </div>
+
+            <div class="grid-container">
+                <div class="card blue-card">
+                    <h2>Hitung Luas Segitiga</h2>
+                    
+                    <div class="input-group">
+                        <label for="alas">Alas (cm)</label>
+                        <input type="number" id="alas" placeholder="Masukkan panjang alas">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="tinggi">Tinggi (cm)</label>
+                        <input type="number" id="tinggi" placeholder="Masukkan tinggi">
+                    </div>
+
+                    <div class="button-group">
+                        <button id="hitung-luas" class="button primary-button">
+                            Hitung Luas
+                        </button>
+                        <button id="reset-luas" class="button reset-button">
+                            Reset
+                        </button>
+                    </div>
+
+                    <div id="hasil-luas" class="result-box blue-result hidden">
+                    </div>
+                </div>
+
+                <div class="card green-card">
+                    <h2>Hitung Keliling Segitiga</h2>
+                    
+                    <div class="input-group">
+                        <label for="sisi-a">Sisi A (cm)</label>
+                        <input type="number" id="sisi-a" placeholder="Panjang sisi A">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="sisi-b">Sisi B (cm)</label>
+                        <input type="number" id="sisi-b" placeholder="Panjang sisi B">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="sisi-c">Sisi C (cm)</label>
+                        <input type="number" id="sisi-c" placeholder="Panjang sisi C">
+                    </div>
+
+                    <div class="button-group">
+                        <button id="hitung-keliling" class="button secondary-button">
+                            Hitung Keliling
+                        </button>
+                        <button id="reset-keliling" class="button reset-button">
+                            Reset
+                        </button>
+                    </div>
+
+                    <div id="hasil-keliling" class="result-box green-result hidden">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2025 Kalkulator Segitiga. di buat oleh @rpdraa</p>
+        </footer>
+    </div>
+
+    <script src="/JS/script.js"></script>
+</body>
+</html>
